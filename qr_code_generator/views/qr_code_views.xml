@@ -1,0 +1,47 @@
+<odoo>
+    <!-- List View -->
+    <record id="view_qr_code_list" model="ir.ui.view">
+        <field name="name">qrcode.generator.list</field>
+        <field name="model">qrcode.generator</field>
+        <field name="arch" type="xml">
+            <tree string="QR Codes">
+                <field name="name"/>
+                <field name="url"/>
+                <field name="qr_code_image" widget="image"/>
+
+                <button string="Download" type="object" name="download_qr_code" class="btn-secondary"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_qr_code_form" model="ir.ui.view">
+        <field name="name">qrcode.generator.form</field>
+        <field name="model">qrcode.generator</field>
+        <field name="arch" type="xml">
+            <form string="QR Code Generator">
+                <group>
+                    <field name="name"/>
+                    <field name="url"/>
+                    <field name="qr_code_image" widget="image" readonly="1"/>
+
+                    <group>
+                        <button string="Generate" type="object" name="generate_qr_code" class="btn-primary"/>
+
+                        <button string="Download" type="object" name="download_qr_code" class="btn-secondary"/>
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_qr_code" model="ir.actions.act_window">
+        <field name="name">QR Code Generator</field>
+        <field name="res_model">qrcode.generator</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu -->
+    <menuitem id="menu_qr_code_generator" name="QR Code Generator" sequence="10" action="action_qr_code"/>
+</odoo>
