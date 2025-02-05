@@ -12,6 +12,6 @@
     ],
     'installable': True,
     'application': True,
-    'images': ['static/description/images/qr_code_genetator.png'],
+    'images': ['static/description/images/qr_code_generator.png'],
     'license': 'LGPL-3',
 }
