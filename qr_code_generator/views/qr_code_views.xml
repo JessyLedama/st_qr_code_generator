@@ -21,7 +21,7 @@
         <field name="arch" type="xml">
             <form string="QR Code Generator">
                 <group>
-                    <label for="name"> Name <label/>
+                    <label for="name"> Name </label>
                     <field name="name"/>
                     <field name="url"/>
                     <field name="qr_code_image" widget="image" readonly="1"/>
