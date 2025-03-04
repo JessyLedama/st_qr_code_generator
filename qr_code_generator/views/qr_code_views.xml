@@ -4,13 +4,13 @@
         <field name="name">qrcode.generator.list</field>
         <field name="model">qrcode.generator</field>
         <field name="arch" type="xml">
-            <tree string="QR Codes">
+            <list string="QR Codes">
                 <field name="name"/>
                 <field name="url"/>
                 <field name="qr_code_image" widget="image"/>
 
                 <button string="Download" type="object" name="download_qr_code" class="btn-secondary"/>
-            </tree>
+            </list>
         </field>
     </record>
 
