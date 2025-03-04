@@ -23,7 +23,11 @@
                 <group>
                     <label for="name"> Name </label>
                     <field name="name"/>
+
+                    <label for="url"> URL </label>
                     <field name="url"/>
+
+                    <label for="qr_code_image"> QR Code </label>
                     <field name="qr_code_image" widget="image" readonly="1"/>
 
                     <group>
