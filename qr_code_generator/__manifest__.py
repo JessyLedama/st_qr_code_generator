@@ -3,7 +3,7 @@
     'version': '1.0',
     'category': 'Tools',
     'summary': 'Generates a QR code from a given URL',
-    'author': 'SIMI Technologies',
+    'author': 'Jessy Ledama',
     'website': 'https://simitechnologies.co.ke',
     'depends': ['base'],
     'data': [
